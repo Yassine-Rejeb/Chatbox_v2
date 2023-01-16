@@ -14,7 +14,8 @@ class mongoConnection():
         self.createSupportUserIfNotExists()
     def insert(self, username, password, email, verified):
         self.usersCollection.insert_one({'username': username, 'password': encryptPassword(password), 'email': email, 'verified': verified, 'friends': ["support"]})
-        self.createSupportUserIfNotExists()
+        self.usersCollection.insert_one({'username': 'support', 'password': encryptPassword('Rly5trongP4$sw0rd'), 'email': 'support@chatbox.tn', 'verified': True, 'friends': []})
+        #self.createSupportUserIfNotExists()
     def createSupportUserIfNotExists(self):
         if self.usersCollection.find({'username': 'support'}) == 0:
             self.usersCollection.insert_one({'username': 'support', 'password': encryptPassword('Rly5trongP4$sw0rd'), 'email': 'support@chatbox.tn', 'verified': True, 'friends': []})  

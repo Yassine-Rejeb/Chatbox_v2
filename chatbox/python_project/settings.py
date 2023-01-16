@@ -70,7 +70,7 @@ TEMPLATES = [
         },
     },
 ]
-
+CSRF_TRUSTED_ORIGINS = ['https://127.0.0.1', 'https://localhost']
 WSGI_APPLICATION = 'python_project.wsgi.application'
 
 
