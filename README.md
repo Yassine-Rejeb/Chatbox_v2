@@ -9,14 +9,13 @@ Storage solution: MongoDB
 
 ## Installation
 
-1. Install python3, django
-2. Install mongoDB
-3. Clone repo
+1. Install Docker and docker-compose
+2. Clone repo
 
 ## Usage
 
 Open terminal under the repo. 
-`$ python manage.py runserver`
+`$ docker-compose up`
 
 ## Contributing
 
