@@ -5,6 +5,7 @@ It includes :
 - Registration
 - Login
 - Chat UI
+
 Storage solution: MongoDB
 
 ## Installation
