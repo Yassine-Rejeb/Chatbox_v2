@@ -15,8 +15,8 @@ Storage solution: MongoDB
 
 ## Usage
 
-Open terminal under the repo. 
-`$ docker-compose up`
+Open terminal under the repo directory. 
+`$ docker-compose up -d`
 
 ## Contributing
 
